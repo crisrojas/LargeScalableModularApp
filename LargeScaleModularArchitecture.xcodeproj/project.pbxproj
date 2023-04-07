@@ -38,6 +38,10 @@
 		40A9E29F29E0518B00EAEE75 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9E29E29E0518B00EAEE75 /* Main.swift */; };
 		40A9E2A129E0519100EAEE75 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9E2A029E0519100EAEE75 /* Main.swift */; };
 		40A9E2A329E052D000EAEE75 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9E2A229E052D000EAEE75 /* Dependencies.swift */; };
+		40A9E2AC29E055E600EAEE75 /* HTTPClientImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A9E2AB29E055E600EAEE75 /* HTTPClientImplementation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40A9E2AF29E055E600EAEE75 /* HTTPClientImplementation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9E2A929E055E500EAEE75 /* HTTPClientImplementation.framework */; };
+		40A9E2B029E055E600EAEE75 /* HTTPClientImplementation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9E2A929E055E500EAEE75 /* HTTPClientImplementation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40A9E2B529E055FA00EAEE75 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9E2B429E055FA00EAEE75 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,13 @@
 			remoteGlobalIDString = 40A9E28A29E0516000EAEE75;
 			remoteInfo = HTTPClient;
 		};
+		40A9E2AD29E055E600EAEE75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A9E20629E050E400EAEE75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A9E2A829E055E500EAEE75;
+			remoteInfo = HTTPClientImplementation;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +105,7 @@
 			files = (
 				40A9E27229E0514600EAEE75 /* MarkdownFeature.framework in Embed Frameworks */,
 				40A9E29229E0516100EAEE75 /* HTTPClient.framework in Embed Frameworks */,
+				40A9E2B029E055E600EAEE75 /* HTTPClientImplementation.framework in Embed Frameworks */,
 				40A9E23E29E0511A00EAEE75 /* Suscription.framework in Embed Frameworks */,
 				40A9E25229E0512500EAEE75 /* Editor.framework in Embed Frameworks */,
 				40A9E26229E0513900EAEE75 /* Notes.framework in Embed Frameworks */,
@@ -132,6 +144,9 @@
 		40A9E29E29E0518B00EAEE75 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		40A9E2A029E0519100EAEE75 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		40A9E2A229E052D000EAEE75 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		40A9E2A929E055E500EAEE75 /* HTTPClientImplementation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPClientImplementation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A9E2AB29E055E600EAEE75 /* HTTPClientImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPClientImplementation.h; sourceTree = "<group>"; };
+		40A9E2B429E055FA00EAEE75 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +156,7 @@
 			files = (
 				40A9E27129E0514600EAEE75 /* MarkdownFeature.framework in Frameworks */,
 				40A9E29129E0516100EAEE75 /* HTTPClient.framework in Frameworks */,
+				40A9E2AF29E055E600EAEE75 /* HTTPClientImplementation.framework in Frameworks */,
 				40A9E23D29E0511A00EAEE75 /* Suscription.framework in Frameworks */,
 				40A9E25129E0512500EAEE75 /* Editor.framework in Frameworks */,
 				40A9E26129E0513900EAEE75 /* Notes.framework in Frameworks */,
@@ -190,6 +206,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40A9E2A629E055E500EAEE75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -203,6 +226,7 @@
 				40A9E26C29E0514600EAEE75 /* MarkdownFeature */,
 				40A9E27C29E0515700EAEE75 /* PremiumUtils */,
 				40A9E28C29E0516100EAEE75 /* HTTPClient */,
+				40A9E2AA29E055E600EAEE75 /* HTTPClientImplementation */,
 				40A9E20F29E050E400EAEE75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -217,6 +241,7 @@
 				40A9E26B29E0514600EAEE75 /* MarkdownFeature.framework */,
 				40A9E27B29E0515700EAEE75 /* PremiumUtils.framework */,
 				40A9E28B29E0516100EAEE75 /* HTTPClient.framework */,
+				40A9E2A929E055E500EAEE75 /* HTTPClientImplementation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,6 +315,15 @@
 			path = HTTPClient;
 			sourceTree = "<group>";
 		};
+		40A9E2AA29E055E600EAEE75 /* HTTPClientImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				40A9E2AB29E055E600EAEE75 /* HTTPClientImplementation.h */,
+				40A9E2B429E055FA00EAEE75 /* Main.swift */,
+			);
+			path = HTTPClientImplementation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -341,6 +375,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40A9E2A429E055E500EAEE75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9E2AC29E055E600EAEE75 /* HTTPClientImplementation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -362,6 +404,7 @@
 				40A9E27029E0514600EAEE75 /* PBXTargetDependency */,
 				40A9E28029E0515700EAEE75 /* PBXTargetDependency */,
 				40A9E29029E0516100EAEE75 /* PBXTargetDependency */,
+				40A9E2AE29E055E600EAEE75 /* PBXTargetDependency */,
 			);
 			name = LargeScaleModularArchitecture;
 			productName = LargeScaleModularArchitecture;
@@ -476,6 +519,24 @@
 			productReference = 40A9E28B29E0516100EAEE75 /* HTTPClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		40A9E2A829E055E500EAEE75 /* HTTPClientImplementation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A9E2B129E055E600EAEE75 /* Build configuration list for PBXNativeTarget "HTTPClientImplementation" */;
+			buildPhases = (
+				40A9E2A429E055E500EAEE75 /* Headers */,
+				40A9E2A529E055E500EAEE75 /* Sources */,
+				40A9E2A629E055E500EAEE75 /* Frameworks */,
+				40A9E2A729E055E500EAEE75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTTPClientImplementation;
+			productName = HTTPClientImplementation;
+			productReference = 40A9E2A929E055E500EAEE75 /* HTTPClientImplementation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -513,6 +574,10 @@
 						CreatedOnToolsVersion = 14.2;
 						LastSwiftMigration = 1420;
 					};
+					40A9E2A829E055E500EAEE75 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
 				};
 			};
 			buildConfigurationList = 40A9E20929E050E400EAEE75 /* Build configuration list for PBXProject "LargeScaleModularArchitecture" */;
@@ -535,6 +600,7 @@
 				40A9E26A29E0514600EAEE75 /* MarkdownFeature */,
 				40A9E27A29E0515700EAEE75 /* PremiumUtils */,
 				40A9E28A29E0516000EAEE75 /* HTTPClient */,
+				40A9E2A829E055E500EAEE75 /* HTTPClientImplementation */,
 			);
 		};
 /* End PBXProject section */
@@ -586,6 +652,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		40A9E28929E0516000EAEE75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A9E2A729E055E500EAEE75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -654,6 +727,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40A9E2A529E055E500EAEE75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9E2B529E055FA00EAEE75 /* Main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -686,6 +767,11 @@
 			isa = PBXTargetDependency;
 			target = 40A9E28A29E0516000EAEE75 /* HTTPClient */;
 			targetProxy = 40A9E28F29E0516100EAEE75 /* PBXContainerItemProxy */;
+		};
+		40A9E2AE29E055E600EAEE75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40A9E2A829E055E500EAEE75 /* HTTPClientImplementation */;
+			targetProxy = 40A9E2AD29E055E600EAEE75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1259,6 +1345,69 @@
 			};
 			name = Release;
 		};
+		40A9E2B229E055E600EAEE75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V73WZ9Y4HH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lat.cristian.HTTPClientImplementation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40A9E2B329E055E600EAEE75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V73WZ9Y4HH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lat.cristian.HTTPClientImplementation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1330,6 +1479,15 @@
 			buildConfigurations = (
 				40A9E29429E0516100EAEE75 /* Debug */,
 				40A9E29529E0516100EAEE75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A9E2B129E055E600EAEE75 /* Build configuration list for PBXNativeTarget "HTTPClientImplementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A9E2B229E055E600EAEE75 /* Debug */,
+				40A9E2B329E055E600EAEE75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

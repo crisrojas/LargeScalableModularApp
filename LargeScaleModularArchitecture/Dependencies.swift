@@ -9,12 +9,10 @@ import Suscription
 import Editor
 import Notes
 import HTTPClient
+import HTTPClientImplementation
 
-/// A change in httmodule will trigger a recompiling of all its dependant modules:
-/// - subscription
-/// - editor
-/// - notes
-let client = HTTPClient()
+/// When changing Client implementation, modules dependent on the HTTPClient protocol won't need to recompile
+let client = Client()
 let subs   = Suscription(client: client)
 let editor = Editor(client: client)
 let notes  = Notes(client: client)
